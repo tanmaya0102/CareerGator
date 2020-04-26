@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "43687804802",
+    "firebase_url": "https://careergator.firebaseio.com",
+    "project_id": "careergator",
+    "storage_bucket": "careergator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43687804802:android:cab1226c42bdfab56e199b",
+        "android_client_info": {
+          "package_name": "com.tanmaya.careergator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43687804802-cr3p3qnmdifspuf5dtelq26o1a9t6nt4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tanmaya.careergator",
+            "certificate_hash": "0249f8c9271729499d5036f9e15f1a29149bcf7b"
+          }
+        },
+        {
+          "client_id": "43687804802-1c2b97hg7nj4j32912cd9nahglvsmt97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPRfqAAVsOAsGo7OyO6Q0NnqYthyKmRIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43687804802-1c2b97hg7nj4j32912cd9nahglvsmt97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
