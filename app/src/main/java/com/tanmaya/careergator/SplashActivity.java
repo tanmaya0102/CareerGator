@@ -21,7 +21,8 @@ public class SplashActivity extends AppCompatActivity {
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
         imageView.startAnimation(myanim);
         textView.startAnimation(myanim);
-        final Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+
+        final Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
         Thread timer =  new Thread(){
             public void run() {
                 try {

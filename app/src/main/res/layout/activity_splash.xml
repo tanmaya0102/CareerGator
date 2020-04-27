@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/ic_launcher_background"
+        android:background="@color/common_google_signin_btn_text_dark_default"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -28,8 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="220dp"
-            android:background="@drawable/ic_launcher_background"
-            android:text="Made with ♡ by Team CareerGator"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:text="Welcome User\n   Version:1.0"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:textStyle="bold" />
