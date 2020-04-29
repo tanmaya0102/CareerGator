@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/colorAccent"
+    android:background="#724FBD"
     android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#00D30606"
+        android:background="#724FBD"
         android:orientation="vertical"
         android:paddingLeft="24dp"
         android:paddingTop="56dp"
@@ -20,7 +20,7 @@
             android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="24dp"
-            android:src="@drawable/logo2" />
+            android:src="@drawable/logo1" />
 
         <!-- Email Label -->
         <com.google.android.material.textfield.TextInputLayout
@@ -34,7 +34,7 @@
             app:placeholderTextColor="@color/common_google_signin_btn_text_dark_default">
 
             <EditText
-                android:id="@+id/input_email"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
@@ -59,7 +59,7 @@
             app:hintTextColor="@color/common_google_signin_btn_text_dark_default">
 
             <EditText
-                android:id="@+id/input_password"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -73,40 +73,29 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_student"
+            android:id="@+id/reg_student"
             style="@android:style/Widget.Holo.Light.Button.Toggle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
-            android:background="#B30000"
+            android:background="#5D0874"
             android:padding="12dp"
-            android:text="Login as Student"
+            android:text="Register as Student"
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
         <Button
-            android:id="@+id/btn_teacher"
+            android:id="@+id/reg_teacher"
             style="@android:style/Widget.Holo.Light.Button.Toggle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
-            android:background="#B30000"
+            android:background="#5D0874"
             android:padding="12dp"
-            android:text="Login as Teacher"
+            android:text="Register as Teacher"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
-
-        <TextView
-            android:id="@+id/link_signup"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:gravity="center"
-            android:text="No account yet? Create one"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textSize="16dip"
-            android:clickable="true"/>
 
     </LinearLayout>
 </ScrollView>
