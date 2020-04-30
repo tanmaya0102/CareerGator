@@ -33,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         mPassword = findViewById(R.id.input_password);
         LoginS = findViewById(R.id.btn_student);
         LoginT = findViewById(R.id.btn_teacher);
+        mAuth=FirebaseAuth.getInstance();
         register = findViewById(R.id.link_signup);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +44,63 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
         });
+        firebaseAuthListener=new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
+                if (user!=null)
+                {
+                    Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                    return;
+                }
+            }
+        };
+        LoginT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final String email=mEmail.getText().toString();
+                final String password=mPassword.getText().toString();
+                mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(!task.isSuccessful()){
+                            Toast.makeText(LoginActivity.this, "Login  Error", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
 
+            }
+        });
+        LoginS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final String email=mEmail.getText().toString();
+                final String password=mPassword.getText().toString();
+                mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(!task.isSuccessful()){
+                            Toast.makeText(LoginActivity.this, "Login  Error", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+            }
+        });
     }
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+        mAuth.addAuthStateListener(firebaseAuthListener);
+    }
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+        mAuth.removeAuthStateListener(firebaseAuthListener);
+    }
+
 }
