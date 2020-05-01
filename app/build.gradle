@@ -41,6 +41,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.2.1'
     implementation 'com.google.firebase:firebase-auth:19.3.0'
     implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.synnapps:carouselview:0.1.4'
 }
 repositories {
     mavenCentral()

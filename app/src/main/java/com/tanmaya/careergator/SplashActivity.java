@@ -2,6 +2,7 @@ package com.tanmaya.careergator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.Animation;
@@ -22,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
         imageView.startAnimation(myanim);
         textView.startAnimation(myanim);
 
-        final Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
+        final Intent intent = new Intent(SplashActivity.this,MainActivity.class);
         Thread timer =  new Thread(){
             public void run() {
                 try {

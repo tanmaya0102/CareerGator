@@ -85,7 +85,7 @@
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
         <Button
-            android:id="@+id/btn_teacher"
+            android:id="@+id/reg_student"
             style="@android:style/Widget.Holo.Light.Button.Toggle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,17 +93,17 @@
             android:layout_marginBottom="24dp"
             android:background="#B30000"
             android:padding="12dp"
-            android:text="Login as Teacher"
+            android:text="Register as Student"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
 
         <TextView
-            android:id="@+id/link_signup"
+            android:id="@+id/link_ta"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:text="No account yet? Create one"
+            android:text="Are you a Teacher? Click here"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textSize="16dip"
             android:clickable="true"/>

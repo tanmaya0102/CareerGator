@@ -73,7 +73,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/reg_student"
+            android:id="@+id/btn_teacher"
             style="@android:style/Widget.Holo.Light.Button.Toggle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
             android:layout_marginBottom="24dp"
             android:background="#5D0874"
             android:padding="12dp"
-            android:text="Register as Student"
+            android:text="Login as Teacher"
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
         <Button
@@ -96,6 +96,17 @@
             android:text="Register as Teacher"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+        <TextView
+            android:id="@+id/link_sa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Are you a Student? Click here"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="16dip"
+            android:clickable="true"/>
 
     </LinearLayout>
 </ScrollView>
