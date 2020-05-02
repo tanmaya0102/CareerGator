@@ -57,10 +57,12 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/fcc"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"
             android:clickable="true"
+            android:focusable="auto"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardBackgroundColor="@color/colorPrimary">
 
@@ -110,6 +112,7 @@
             app:cardBackgroundColor="@color/deeppurple">
 
             <LinearLayout
+                android:id="@+id/cm"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -164,6 +167,7 @@
             app:cardBackgroundColor="@color/yello">
 
             <LinearLayout
+                android:id="@+id/jc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -201,10 +205,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cc"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"
             android:clickable="true"
+            android:focusable="auto"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardBackgroundColor="@color/colorAccent">
 
