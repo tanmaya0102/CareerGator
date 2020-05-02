@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".TeacherDashboard"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
             android:name=".StudentDashboard"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
@@ -31,6 +31,10 @@
         </activity>
         <activity android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
