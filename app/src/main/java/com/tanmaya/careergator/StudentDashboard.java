@@ -13,7 +13,7 @@ import com.synnapps.carouselview.ImageListener;
 
 public class StudentDashboard extends AppCompatActivity {
     private CarouselView carouselView;
-    private CardView cardView4;
+    private CardView cardView1,cardView4;
     int[] sampleImages ={R.drawable.logo,R.drawable.logo1,R.drawable.logo4,R.drawable.logo2};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +23,15 @@ public class StudentDashboard extends AppCompatActivity {
         carouselView = findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
         carouselView.setImageListener(imageListener);
+        cardView1=findViewById(R.id.fcc);
         cardView4=findViewById(R.id.cc);
-
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(StudentDashboard.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
         cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
